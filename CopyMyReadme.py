@@ -5,15 +5,17 @@ import sys
 def get_github_username():
     try:
         # Run the git command to get the user's GitHub username
-        username = subprocess.check_output(['git', 'config', 'user.name']).decode().strip()
+        username = subprocess.check_output(
+            ['git', 'config', 'user.name']).decode().strip()
         return username
     except subprocess.CalledProcessError:
-        return input("Enter your github username : ")  # Git configuration not found or an error occurred
+        # Git configuration not found or an error occurred
+        return input("Enter your github username : ")
 
 
 def push_to_remote(remote_name='origin', branch_name='main'):
     try:
-       
+
         # Add and commit the changes
         subprocess.check_output(['git', 'add', '.'])
         subprocess.check_output(['git', 'commit', '-m', 'Update README.md'])
@@ -45,7 +47,7 @@ if not line_exists:
         gitignore.write("\n"+line_to_append)
 
 
-github_username = get_github_username()
+github_username = "nipuna-dulara"
 
 # Prompt the user to input their social media usernames
 print("Leave next fields empty to drop respective social media icon from your README.md file.")
@@ -58,16 +60,18 @@ twitter_username = input("Enter your Twitter username: ")
 with open('README.md', 'r+') as profile_readme:
     # Read the content of the file
     content = profile_readme.read()
-    
-    content = content.replace("https://stackoverflow.com/users/21977864/chathura-de-silva", stackoverflow_url)
-    content = content.replace("apchathuradesilva", linkedin_username) 
+
+    content = content.replace(
+        "https://stackoverflow.com/users/21977864/chathura-de-silva", stackoverflow_url)
+    content = content.replace("apchathuradesilva", linkedin_username)
     content = content.replace("chathuradesilva", hackerrank_username)
     content = content.replace("chathuradsilva", twitter_username)
-    content = content.replace("chathura-de-silva", github_username)
+    content = content.replace("nipunadulara", github_username)
     content = content.replace("Chathura De Silva", github_username)
     profile_readme.seek(0)  # Move the file cursor to the beginning
-    profile_readme.write(content)  # Write the modified content back to the file
+    # Write the modified content back to the file
+    profile_readme.write(content)
     profile_readme.truncate()  # Truncate the remaining content
 
-  
+
 push_to_remote()
