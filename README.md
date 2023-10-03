@@ -1,8 +1,4 @@
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="line_break.gif"></a>
 
-
-
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img align="right" src="computer.gif" alt="nipuna-dulara" height="220"/></a>
 
 
 <details>
