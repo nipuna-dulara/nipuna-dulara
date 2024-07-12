@@ -23,13 +23,7 @@
   <a href="https://www.linkedin.com/in/nipuna-dulara-51416a200/" target="blank"><img align="center"
       src="icons\linkedin.svg"
       alt="nipuna-dulara" height="30" width="40" /></a>
-  <a href="" target="blank"><img align="center"
-      src="icons\stackoverflow.svg" height="30" width="40" /></a>
-  <a href="https://www.hackerrank.com/210467A_cse_21" target="blank"><img align="center"
-      src="icons\hackerrank.svg"
-      alt="nipuna-dulara" height="30" width="40" /></a>
- <a href="https://twitter.com/" target="blank"><img align="center"
-      src="icons\twitter.svg"
-      alt="nipuna-dulara" height="30" width="40" /></a>
+
+
 </p>
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="line_break.gif"></a>
