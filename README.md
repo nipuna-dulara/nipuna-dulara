@@ -27,3 +27,5 @@
 
 </p>
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="line_break.gif"></a>
+
+![snake gif](https://github.com/nipuna-dulara/nipuna-dulara/blob/output/github-contribution-grid-snake.svg)
